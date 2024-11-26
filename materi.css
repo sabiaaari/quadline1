@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    height: auto;
+    overflow: scroll;
+    background:url(backround.png); 
+}
+
+.navbar {
+    width: 100%;
+    margin top: 20px;
+    display: flex;
+    position: static;
+    position: webkit-sticky;
+    top: 0;
+    background-color:#3880be ;
+    justify-content: right;
+}
+
+.nav-link {
+    font-weight: bold; 
+    color: #ffffff; /* Mengatur warna teks link navbar */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    padding: 10px 15px; 
+}
+
+.navbar .nav-link:hover {
+    color: #cce7ff; 
+}
+
+.pilihan {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.pilfungsi {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.options {
+    margin: 25px 50px 25px 50px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3880be;
+    border: none;
+    text-decoration: none;
+    padding: 5px;
+    margin: 20px 50px 20px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    margin : 20px 90px 20px 50px;
+    padding: 5px;
+    display: flex;
+    float: right;
+    width: 400px;
+    height: 400px;
+}
+
+h1{
+    color: white;
+    font-style: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 25px 25px 25px 25px;
+}
+h2{
+    color: white;
+    font-style: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-style: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 25px 25px;
+}
+
+.wrapper{
+    background: #c8cad168;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 500px 20px 100px;
+    text-align: justify;
+ }
+
+.wrapper {
+    animation: slideInLeft 3s ease forwards;
+    opacity: 0;
+    
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content {
+    animation: slideInLeft 3s ease forwards;
+    opacity: 0;
+    position: relative;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.options {
+    animation: slideInLeft 3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pilihan {
+    animation: slideInLeft 3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+

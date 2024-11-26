@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QUADLINE</title>
+    <link rel="icon" href="logo.png">
+    <!-- Tambahkan pustaka Desmos -->
+    <link rel="stylesheet" href="hitungkuadrat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  </head>
+  <body>
+    <div class="halamancalc">
+      <div class="masukan">
+        <div>
+        <h1>K U A D R A T</h1>
+        <label for="a">Masukkan nilai a:</label>
+        <input type="number" id="a" placeholder="a" step="any" /><br />
+    
+        <label for="b">Masukkan nilai b:</label>
+        <input type="number" id="b" placeholder="b" step="any" /><br />
+
+        <label for="c">Masukkan nilai c:</label>
+        <input type="number" id="c" placeholder="c" step="any" /><br />
+
+        <button onclick="hitungFungsiKuadrat()" class="tmbl">Hitung Grafik</button>
+        </div>
+      </div>
+        <div id="calculator" style="width: 1420px; height: 350px; align-items: center;"></div>
+    </div>
+
+    <script>
+      var elt = document.getElementById("calculator");
+        var calculator = Desmos.Calculator(elt);
+        var a = 0;
+      // Fungsi untuk menghitung dan menampilkan grafik fungsi kuadrat
+      function hitungFungsiKuadrat() {
+        // Dapatkan nilai a, b, dan c dari input
+        var a = parseFloat(document.getElementById("a").value);
+        var b = parseFloat(document.getElementById("b").value);
+        var c = parseFloat(document.getElementById("c").value);
+        // Inisialisasi kalkulator Desmos
+        
+
+        // Buat ekspresi kuadrat
+        var expression = `y = ${a}x^2 + ${b}x + ${c}`;
+
+        // Atur ekspresi ke kalkulator Desmos
+        calculator.setExpression({ id:  `graph1, ${a}`, latex: expression });
+        a += 1;
+      }
+    </script>
+  </body>
+</html>
